@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
+#include <stdio.h>
 
 /* betty style doc for function main goes there */
 /**
- * main - A function that checks whether a number is posive or negative
+ * main -  A function that checks whether a number is posive or negative
  *Return: 0 (success)
  */
 
@@ -16,15 +17,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
 	{
-	printf("n is negative");
+	printf("%d is negative\n", n);
 	}
 	else if (n > 0)
 	{
-	printf("n is positive");
+	printf("%d  is positive\n", n);
 	}
 	else
 	{
-	printf("n is zero");
+	printf("%d  is zero\n", n);
 
 	}
 	return (0);
